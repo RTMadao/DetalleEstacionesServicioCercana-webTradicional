@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Lista de estaciones</h1>
+<div class="list-group">
+    <a href="{{ url_for('priceStation') }}" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">Texaco bomba del amparo</h5>
+        <small>9.000</small>
+        </div>
+        <p class="mb-1"> frente a ronda real</p>
+    </a>
+    <a href="{{ url_for('priceStation') }}" class="list-group-item list-group-item-action">
+        <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">esso bomba del amparo</h5>
+            <small>9.500</small>
+        </div>
+        <p class="mb-1"> frente a ronda real</p>
+    </a>
+</div>
+<a href="{{ url_for('newEstation') }}" type="button" class="btn btn-primary btn-lg btn-block">Agregar estacion</a>
+
+{% endblock %}
